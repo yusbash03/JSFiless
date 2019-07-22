@@ -1,18 +1,23 @@
 
 
 function narcissisticVal(number) {
+    //get the input value
      number = document.getElementById("numbr").value;
     //let results = number * number;
     //console.log(results);
+    
+    //displayed if it's a narcissistic number
     let isNarcNum = document.getElementById('isTrue').innerHTML = number + " is a Narcissistic number";
+    
+    //displayed if is a narcissistic number
     let isNotNarcNum = document.getElementById('notTrue').innerHTML = number + " is not a Narcissistic number";
     let isNarc = document.getElementById('isTrue');
-    isNarc.style.display = 'none';
+    isNarc.style.display = 'none';//hide text before operation
     let isNotNarc = document.getElementById('notTrue');
-    isNotNarc.style.display = 'none';
+    isNotNarc.style.display = 'none';//hide text before operation
 
      var stringVal = '' + number;
-     var valLength = stringVal.length;
+     var valLength = stringVal.length;//we find the lenght the value
      var result = 0;  
      for (let i in stringVal) {
        result += Math.pow((+stringVal[i]), valLength);
