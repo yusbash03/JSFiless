@@ -23,7 +23,6 @@ function narcissisticVal(number) {
        result += Math.pow((+stringVal[i]), valLength);
      }
      if(result == number && number !=""){
-        //return result === number;
        alert(number + " is a Narcissistic number");
        isNotNarc.style.display = 'none';
        isNarc.style.display = 'block';
